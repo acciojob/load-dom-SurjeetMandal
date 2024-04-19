@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   
-  if (!document.body.hasChildNodes()) {
+  if (document.body.hasChildNodes()) {
     
     var para = document.createElement("p");
     para.textContent = "DOM load success";
