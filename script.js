@@ -1,4 +1,5 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", function() {
-	document.querySelector('p').style.display = `block`;
-})
+  let para = document.createElement('p');
+  para.textContent = `DOM load success`;
+  document.body.appendChild(para); // Append the paragraph to the body or another element in the DOM
+});
