@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-  
-  if (document.body.hasChildNodes()) {
-    
-    var para = document.createElement("p");
-    para.textContent = "DOM load success";
-    document.body.appendChild(para);
-  } else {
-    console.error("Body is not empty");
+
+  var body = document.querySelector("body");
+
+  if (body.hasChildNodes()) {
+
+    body.innerHTML = "";
   }
+
+  var textNode = document.creatElement("p");
+	textNode.textContent = `DOM load success`
+	
+  body.appendChild(textNode);
 });
 
